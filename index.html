@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>IronPeak Fitness — Join Now</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <!-- ── HERO ── -->
+        <section class="hero">
+            <div class="badge">
+                <span class="badge-dot"></span>
+                Now Enrolling — June 2026
+            </div>
+            <div class="hero-eyebrow">Where Champions Train</div>
+            <h1>Iron<span>Peak</span><br />Fitness</h1>
+            <p class="hero-sub">
+                <strong>Push past your limits.</strong> World-class equipment,
+                elite coaching, and a community that refuses to quit.
+            </p>
+
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-num">12K+</div>
+                    <div class="stat-label">Members</div>
+                </div>
+                <div class="divider-line"></div>
+                <div class="stat">
+                    <div class="stat-num">48</div>
+                    <div class="stat-label">Expert Coaches</div>
+                </div>
+                <div class="divider-line"></div>
+                <div class="stat">
+                    <div class="stat-num">5★</div>
+                    <div class="stat-label">Rated Facility</div>
+                </div>
+            </div>
+
+            <div class="scroll-cue">
+                <span>Claim Your Spot</span>
+                <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </div>
+        </section>
+
+        <!-- ── PITCH ── -->
+        <section class="pitch">
+            <div class="pitch-inner">
+                <h2>Join IronPeak —<br /><em>Limited Spots This Month</em></h2>
+                <p class="pitch-body">
+                    We keep our membership intentionally small so every athlete
+                    gets personalised attention. Once we hit capacity, the
+                    waitlist kicks in — and it moves slow.
+                </p>
+
+                <div class="perks">
+                    <div class="perk">
+                        <div class="perk-icon">🏋️</div>
+                        <div class="perk-title">Pro Equipment</div>
+                        <div class="perk-desc">
+                            Commercial-grade weights, cables, and cardio
+                            machines — never wait for a rack.
+                        </div>
+                    </div>
+                    <div class="perk">
+                        <div class="perk-icon">🔥</div>
+                        <div class="perk-title">Elite Coaching</div>
+                        <div class="perk-desc">
+                            Certified coaches who build real programs around
+                            your specific goals.
+                        </div>
+                    </div>
+                    <div class="perk">
+                        <div class="perk-icon">⚡</div>
+                        <div class="perk-title">Open 24 / 7</div>
+                        <div class="perk-desc">
+                            Train on your schedule — early morning, late night,
+                            anytime.
+                        </div>
+                    </div>
+                    <div class="perk">
+                        <div class="perk-icon">🥤</div>
+                        <div class="perk-title">Recovery Zone</div>
+                        <div class="perk-desc">
+                            Ice bath, steam room, and protein bar built right
+                            into the facility.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── FORM ── -->
+        <section class="form-section" id="join">
+            <div class="form-wrap">
+                <div class="form-header">
+                    <div class="eyebrow">Get Early Access</div>
+                    <h2>Reserve Your Spot</h2>
+                    <p>
+                        Fill in your details and our team will call you to
+                        confirm membership.
+                    </p>
+                </div>
+
+                <div class="spots-bar">
+                    <span class="spots-icon">🔴</span>
+                    <span class="spots-text"
+                        ><strong>Only 11 spots remaining</strong> for June
+                        intake — don't miss out.</span
+                    >
+                </div>
+
+                <!-- card wraps both form and success so the card shell stays visible -->
+                <div class="card">
+                    <div class="error-banner" id="errorBanner" role="alert">
+                        <svg
+                            width="17"
+                            height="17"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="12" y1="8" x2="12" y2="12" />
+                            <line x1="12" y1="16" x2="12.01" y2="16" />
+                        </svg>
+                        <span id="errorMsg"
+                            >Something went wrong. Please try again.</span
+                        >
+                    </div>
+
+                    <form id="leadForm" novalidate>
+                        <div class="field">
+                            <label for="fullName">Full Name</label>
+                            <input
+                                type="text"
+                                id="fullName"
+                                name="fullName"
+                                placeholder="Alex Johnson"
+                                required
+                                autocomplete="name"
+                            />
+                        </div>
+
+                        <div class="field">
+                            <label for="email">Email Address</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="alex@example.com"
+                                required
+                                autocomplete="email"
+                            />
+                        </div>
+
+                        <div class="field">
+                            <label for="phone">Phone Number</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="+91 98765 43210"
+                                value="+91 "
+                                required
+                                autocomplete="tel"
+                            />
+                        </div>
+
+                        <div class="field">
+                            <label for="joiningDate"
+                                >Expected Joining Date</label
+                            >
+                            <input
+                                type="date"
+                                id="joiningDate"
+                                name="joiningDate"
+                                required
+                            />
+                        </div>
+
+                        <button type="submit" class="btn-submit" id="submitBtn">
+                            <span class="btn-inner">
+                                <span class="spinner" aria-hidden="true"></span>
+                                <span class="btn-label">Claim My Spot →</span>
+                            </span>
+                        </button>
+                    </form>
+
+                    <div class="success-state" id="successState">
+                        <div class="success-icon">💪</div>
+                        <h3>You're on the list!<br />We'll call you soon.</h3>
+                        <div class="success-divider"></div>
+                        <p>
+                            Keep your phone close — our team will reach out
+                            within 24 hours to confirm your spot at IronPeak.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <strong>IronPeak Fitness</strong> &nbsp;·&nbsp; © 2026 &nbsp;·&nbsp;
+            All rights reserved
+        </footer>
+
+        <script src="index.js"></script>
+    </body>
+</html>
