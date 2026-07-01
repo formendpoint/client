@@ -36,7 +36,7 @@ form.addEventListener("submit", async (e) => {
     setLoading(true);
 
     try {
-        const res = await fetch("https://api.formendpoint.tech/f/fm_7478d53ccbd24c24", {
+        const res = await fetch("https://api.formendpoint.tech/f/fm_d8cad9191bea4366", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ fullName, email, phone, joiningDate }),
